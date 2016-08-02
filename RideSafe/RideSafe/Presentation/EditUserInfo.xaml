@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RideSafe.Presentation.EditUserInfo">
+  <ContentPage.Content>
+    <StackLayout>
+        <Label Text="Name: " />
+        <Entry x:Name="txtName" />
+        <Label Text="Phone number: " />
+        <Entry x:Name="txtPhoneNumber" />
+        <Label Text="Sex: " />
+        <Entry x:Name="txtSex" />
+        <Label Text="Weight: " />
+        <Entry x:Name="txtWeight" />
+        <Label Text="Age: " />
+        <Entry x:Name="txtAge" />
+        <Label Text="Blood type: " />
+        <Entry x:Name="txtBloodType" />
+    </StackLayout>
+  </ContentPage.Content>
+
+  <ContentPage.ToolbarItems>
+    <ToolbarItem x:Name="btnSave" Text="Save" Clicked="btnSave_Clicked" Order="Primary" Priority="0" Icon="save.png"/>
+  </ContentPage.ToolbarItems>
+  
+</ContentPage>

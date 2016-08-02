@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RideSafe.Presentation.ShowUserInfo">
+  <ContentPage.Content>
+    <StackLayout>
+      <StackLayout Orientation="Horizontal">
+        <Label Text="Name: " />
+        <Label x:Name="lblName" />
+      </StackLayout>
+
+      <StackLayout Orientation="Horizontal">
+        <Label Text="Phone number: " />
+        <Label x:Name="lblPhoneNumber" />
+      </StackLayout>
+
+      <StackLayout Orientation="Horizontal">
+        <Label Text="Sex: " />
+        <Label x:Name="lblSex" />
+      </StackLayout>
+
+      <StackLayout Orientation="Horizontal">
+        <Label Text="Weight: " />
+        <Label x:Name="lblWeight" />
+      </StackLayout>
+
+      <StackLayout Orientation="Horizontal">
+        <Label Text="Age: " />
+        <Label x:Name="lblAge" />
+      </StackLayout>
+
+      <StackLayout Orientation="Horizontal">
+        <Label Text="Blood type: " />
+        <Label x:Name="lblBloodType" />
+      </StackLayout>
+    </StackLayout>
+  </ContentPage.Content>
+
+  <ContentPage.ToolbarItems>
+    <ToolbarItem x:Name="btnEdit" Text="Edit" Clicked="btnEdit_Clicked" Order="Primary" Priority="0" Icon="edit.png"/>
+  </ContentPage.ToolbarItems>
+</ContentPage>
